@@ -1,0 +1,117 @@
+*body{
+    font-family: sans-serif;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    font-size: 14px;
+    }
+    .dashboard {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background: #444;
+    color: #fff;
+  }
+  .dashboard-heading {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .dashboard-heading h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: yellow;
+  }
+
+  .dashboard-content {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+  }
+
+  .dashboard-content button {
+    border: none;
+    padding: 10px 20px;
+    background: #1cb6c7;
+    color: #353737;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .news-container {
+    width: auto;
+    padding:  auto;
+    box-sizing: border-box;
+    background: #fef9f9;
+  }
+  .nav-links{
+    flex: 1;
+    text-align:center;
+  }
+  .nav-links ul li{
+    list-style:none;
+    display:flexbox;
+    padding:8px 12px;
+    position: relative;
+    cursor: pointer;
+  }
+  .nav-links ul li a{
+  color: rgb(10, 32, 89);  
+  text-decoration: none;
+  font-size: 13px;
+  }
+  .nav-links ul li :hover{
+    background-color: aqua;
+    color: darkgreen;
+    font-size: 30px;
+    border: black;
+    border-radius:700px 200px;
+  }
+  .news-card {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+
+  .news-card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  .news-card p {
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 0;
+    line-height: 20px;
+  }
+
+  .news-card a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  @media(max-width: 700px){
+    body {
+        font-size: 5px;
+    }
+    .nav-links ul li:after{
+        background-color: aqua;
+        color: darkgreen;
+        font-size: 30px;
+        border: black;
+        border-radius:700px 200px;
+    }
+  }

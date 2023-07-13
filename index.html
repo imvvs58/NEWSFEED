@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+< lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="App.js">
+  <!-- <link rel="stylesheet" href="news.css">
+  <link rel="stylesheet" href="news.js"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="">
+  <title>NEWS Inshorts</title>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dashboard-heading">
+      <h1>NEWS inshorts <i class="fa fa-address-card"></i></h1>
+    </div>
+    <div class="dashboard-content">
+      <button onclick="loadSavedNews()">National News</button>
+      <button onclick="loadNewNews()">World News</button>
+    </div>
+  </div>
+  <div class="news-container">
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="https://www.inshorts.com/en/read/national" onclick="highlightButton(this)">National</a></li>
+        <li><a href="https://www.inshorts.com/en/read/world" onclick="highlightButton(this)">World</a></li>
+        <li><a href="https://www.inshorts.com/en/read/business" onclick="highlightButton(this)">Business</a></li>
+        <li><a href="https://www.inshorts.com/en/read/sports" onclick="highlightButton(this)">Sports</a></li>
+        <li><a href="https://www.inshorts.com/en/read/entertainment" onclick="highlightButton(this)">Entertainment</a></li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    function loadSavedNews() {
+      window.location.href = 'https://www.inshorts.com/en/read/national';
+    }
+
+    function loadNewNews() {
+      window.location.href = 'https://www.inshorts.com/en/read/world';
+    }
+
+    function highlightButton(button) {
+      var buttons = document.querySelectorAll('.nav-links ul li a');
+
+      buttons.forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+
+      button.classList.add('active');
+    }
+  </script>
+    </body>
+  </html>
